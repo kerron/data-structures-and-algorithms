@@ -20,9 +20,11 @@ const strCompress = (s) => {
     i++;
   }
 
-  return str.join("");
+  const compressed = str.join("");
+  return compressed.length < len ? compressed : s;
 };
 
 console.log(strCompress("aabcccccaaa")); //a2b1c5a3
 console.log(strCompress("heellooooooooooo")); //h1e2l2o11
 console.log(strCompress("worllllldddd")); //w1o1r1l5d3
+console.log(strCompress("worlld")); //worlld
