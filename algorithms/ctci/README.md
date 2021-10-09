@@ -111,7 +111,7 @@ console.log(palindromePermutation("hello world")); // false
 console.log(palindromePermutation("abc")); // false
 ```
 
-### 1.4 One Away
+### 1.5 One Away
 
 There are three types of edits that can performed on strings: insert a character, remove a charachter, or replace a character. Given two strings, write a function to check if they are one edit (or zero edits) away.
 
