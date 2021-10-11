@@ -187,7 +187,7 @@ console.log(strCompress("worlld")); //worlld
 Given an image represented by an N x N matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees. Can you do this in place.
 
 ```js
-//T: O(m*n) S: O(1)
+//T: O(n2) S: O(1)
 const rotateMatrix = (matrix) => {
   if (!matrix.length || !matrix[0].length) return [];
   const len = matrix.length;
