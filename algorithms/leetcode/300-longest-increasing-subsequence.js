@@ -14,7 +14,7 @@ const longestIncreasingSubsequence = (sequence) => {
   let max = 1;
 
   for (let i = 1; i < len; i++) {
-    for (let j = 0; j < len; j++) {
+    for (let j = 0; j < i; j++) {
       if (sequence[i] > sequence[j]) {
         tally[i] = Math.max(tally[i], tally[j] + 1);
         max = Math.max(max, tally[i]);
