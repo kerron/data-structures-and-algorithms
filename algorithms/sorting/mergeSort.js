@@ -1,3 +1,4 @@
+// O(n log n)
 const unsorted = [2, 8, 1, 6, 3, 7, 9, 0, 5, 4];
 
 const merge = (left, right) => {
