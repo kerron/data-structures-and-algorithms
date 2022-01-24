@@ -1,6 +1,7 @@
 # Sorting Algorithms
 
 ## insertionSort
+```js
 // Time O(n^2)
 // Space O(n), O(1) auxilary
 const insertionSort = (list) => {
@@ -19,9 +20,11 @@ const insertionSort = (list) => {
 };
 
 insertionSort([5, 3, 2, 9, 8, 4, 7, 1, 6]); // [1,2,3,4,5,6,7,8,9]
-
+```
 
 ## mergeSort
+
+```js
 // O(n log n)
 const unsorted = [2, 8, 1, 6, 3, 7, 9, 0, 5, 4];
 
@@ -53,8 +56,10 @@ const mergeSort = (list) => {
 };
 
 mergeSort(unsorted); // [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+```
 
 ## selectionSort
+```js
 // O(n2)
 const selectionSort = (items) => {
   for (let i = 0, len = items.length; i < len; i++) {
@@ -75,3 +80,4 @@ const selectionSort = (items) => {
 };
 
 selectionSort([12, 18, 14, 6, 10, 2, 8, 4, 16, 20]); // [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]
+```
